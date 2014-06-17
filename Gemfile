@@ -4,7 +4,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.4'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
+
+gem 'rails_12factor', group: :production
+
+gem 'bootstrap-sass', '2.0.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -30,6 +34,7 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+  
 end
 
 # Use ActiveModel has_secure_password
